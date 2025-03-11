@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Light Mode */
+body {
+  background-color: #f3e8ff; /* Light Purple */
+  color: #171717; /* Dark Text */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark Gray */
+  color: #ffffff; /* Light Text */
+}
+
+/* Primary UI Elements */
+.container {
+  background-color: #e0e7ff; /* Soft Slate Gray for light mode */
+  color: #171717;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.dark-mode .container {
+  background-color: #374151; /* Darker Slate Gray */
+  color: #ffffff;
+}
+
+/* Buttons */
+.button {
+  background-color: #64748b; /* Slate Gray */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #475569; /* Darker Slate Gray */
+  transform: scale(1.05);
+}
+
+.dark-mode .button {
+  background-color: #334155; /* Even Darker Slate Gray for dark mode */
+  color: #ffffff;
+}
+
+/* Expense Boxes */
+.expense-box {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .expense-box {
+  background-color: #3a3a3a;
+}
+
+/* Pie Chart Container */
+.pie-chart-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark-mode .pie-chart-container {
+  background-color: #3a3a3a;
+}
